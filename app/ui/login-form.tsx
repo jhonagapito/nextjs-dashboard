@@ -10,6 +10,7 @@ import { ArrowRightIcon } from '@heroicons/react/20/solid';
 import { Button } from './button';
 import { useFormState, useFormStatus } from 'react-dom';
 import { authenticate } from '../lib/actions';
+import FacebookLogin from './facebook-login';
 
 export default function LoginForm() {
   const [code, action] = useFormState(authenticate, undefined);
@@ -62,6 +63,7 @@ export default function LoginForm() {
           </div>
         </div>
         <LoginButton />
+        <FacebookLogin />
         <div className="flex h-8 items-end space-x-1">
           {code === 'CredentialSignin' && (
             <>

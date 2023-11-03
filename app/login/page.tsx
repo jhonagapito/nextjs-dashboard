@@ -11,7 +11,7 @@ export default function LoginPage() {
                     </div>
                 </div>
                 <LoginForm />
-                {/* <LoginForm /> trigger deployment */}
+               
             </div>
         </main>
     );
